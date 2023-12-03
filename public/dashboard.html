@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h1>Welcome to your Dashboard</h1>
+    <!-- Find a Doctor -->
+    <h2>Find a Doctor</h2>
+    <form action="/find-doctor" method="post">
+      <label for="specialty">Select Specialty:</label>
+      <select id="specialty" name="specialty">
+        <option value="Cardiologist">Cardiologist</option>
+        <option value="Dermatologist">Dermatologist</option>
+        <option value="Pediatrician">Pediatrician</option>
+        <!-- Add more specialties here -->
+      </select>
+      <br /><br />
+      <input type="submit" value="Find Doctor" />
+    </form>
+    <h2>Available Doctors</h2>
+    <ul id="doctor-list">
+      <!-- Doctors will be displayed here -->
+    </ul>
+  </body>
+
+  <!-- Hospital Appointment Form -->
+  <h2>Hospital Appointment</h2>
+  <form action="/book-appointment" method="post">
+    <label for="doctor">Select Doctor:</label>
+    <select id="doctor" name="doctor">
+      <option value="Dr. Smith">Dr. Smith</option>
+      <option value="Dr. Johnson">Dr. Johnson</option>
+      <option value="Dr. Davis">Dr. Davis</option>
+      <!-- Add more doctor options here -->
+    </select>
+    <br /><br />
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" name="date" required />
+    <br /><br />
+    <label for="requirements">Appointment Requirements:</label>
+    <textarea
+      id="requirements"
+      name="requirements"
+      rows="4"
+      cols="50"
+      required
+    ></textarea>
+    <br /><br />
+    <input type="submit" value="Book Appointment" />
+  </form>
+</html>

@@ -1,0 +1,18 @@
+<!-- available-doctors.ejs (in the "views" folder) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Available Doctors</title>
+  </head>
+  <body>
+    <h1>Available Doctors</h1>
+    <ul>
+      <% doctors.forEach(doctor => { %>
+      <li>
+        <%= doctor.name %> (Specialty: <%= doctor.specialty %>, Education: <%=
+        doctor.education %>)
+      </li>
+      <% }); %>
+    </ul>
+  </body>
+</html>

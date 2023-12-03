@@ -1,0 +1,21 @@
+<!-- doctors.html (in the "public" folder) -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Doctors</title>
+  </head>
+  <body>
+    <h1>Doctors Information</h1>
+    <!-- Form to add doctor information -->
+    <h2>Add Doctor Information</h2>
+    <form action="/add-doctor" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+      <label for="specialty">Specialty:</label>
+      <input type="text" id="specialty" name="specialty" required /><br /><br />
+      <label for="education">Education:</label>
+      <input type="text" id="education" name="education" required /><br /><br />
+      <input type="submit" value="Add Doctor" />
+    </form>
+  </body>
+</html>
